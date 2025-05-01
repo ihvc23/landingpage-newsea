@@ -39,7 +39,7 @@
       font-weight: bold;
     }
     .hero {
-      background: url('LOGO-NEWSEA-WHITE.png') center/contain no-repeat var(--primary);
+      background: url('file-XXKZ9EN6oNm92hLjcZngme') center/cover no-repeat;
       color: white;
       text-align: center;
       padding: 6rem 2rem;
@@ -67,12 +67,32 @@
       max-width: 1200px;
       margin: auto;
     }
+    #sobre {
+      background: url('file-TmCWQwQaqwzNzQ9ZNqy7eR') center/cover no-repeat;
+      background-blend-mode: multiply;
+      background-color: rgba(10, 31, 68, 0.6);
+      color: white;
+    }
+    #servicos {
+      background: url('file-PvLDWmnjY5LXGQxvRqGg69') center/cover no-repeat;
+      background-blend-mode: overlay;
+      background-color: rgba(255, 255, 255, 0.95);
+    }
+    #contato {
+      background: url('file-e98e36a5-d661-45ff-b46f-f2ed8cba4fe5') center/cover no-repeat;
+      background-blend-mode: lighten;
+      background-color: rgba(255,255,255,0.85);
+    }
     .section-title {
       font-family: 'Montserrat', sans-serif;
       color: var(--primary);
       font-size: 2rem;
       margin-bottom: 2rem;
       text-align: center;
+    }
+    #sobre .section-title,
+    #sobre p {
+      color: #fff;
     }
     .features {
       display: flex;
@@ -137,12 +157,13 @@
       width: 100%;
     }
     footer {
-      background: var(--primary);
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-      margin-top: 4rem;
-    }
+  background: url('file-RL8j9uCdX4sn9pykNtSkG2') center/cover no-repeat, var(--primary);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+  background-blend-mode: multiply;
+}
     @media (max-width: 768px) {
       .hero h1 {
         font-size: 2rem;
@@ -157,75 +178,3 @@
     }
   </style>
 </head>
-<body>
-  <header>
-    <img src="LOGO-NEWSEA-PRINCIPAL.png" alt="Logo NEWSEA LOG">
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </header>
-  <section class="hero">
-    <h1>Logística que move seu negócio</h1>
-    <p>Transporte, armazenagem e distribuição com inteligência e segurança.</p>
-    <button class="cta">Fale com um especialista</button>
-  </section>
-  <section id="sobre">
-    <h2 class="section-title">Quem Somos</h2>
-    <p style="max-width:800px;margin:auto;text-align:center;">A NEWSEA LOG é especializada em soluções logísticas integradas para empresas que precisam de eficiência, controle e agilidade. Com estrutura moderna e equipe experiente, garantimos entregas no prazo com rastreamento e atendimento consultivo.</p>
-  </section>
-  <section>
-    <h2 class="section-title">Por que escolher a NEWSEA LOG</h2>
-    <ul class="bullets">
-      <li>+98% de entregas no prazo em 2024</li>
-      <li>Monitoramento logístico em tempo real</li>
-      <li>Atendimento humano e personalizado</li>
-      <li>Equipe com mais de 15 anos de experiência</li>
-    </ul>
-  </section>
-  <section>
-    <h2 class="section-title">Quem confia na NEWSEA LOG</h2>
-    <div class="logos-parceiros">
-      <img src="cliente1.png" alt="Logo Cliente 1">
-      <img src="cliente2.png" alt="Logo Cliente 2">
-      <img src="cliente3.png" alt="Logo Cliente 3">
-      <img src="certificacao1.png" alt="Certificação 1">
-    </div>
-  </section>
-  <section id="servicos">
-    <h2 class="section-title">Nossos Serviços</h2>
-    <div class="features">
-      <div class="feature">
-        <img src="ICONE-NEWSEA-1.png" alt="Transporte">
-        <h3>Transporte Rodoviário</h3>
-        <p>Cargas fracionadas ou dedicadas com total controle logístico.</p>
-      </div>
-      <div class="feature">
-        <img src="ICONE-NEWSEA-2.png" alt="Armazenagem">
-        <h3>Armazenagem Inteligente</h3>
-        <p>Infraestrutura segura e sistemas para controle de estoque.</p>
-      </div>
-      <div class="feature">
-        <img src="ICONE-NEWSEA-3.png" alt="Distribuição">
-        <h3>Distribuição e Entregas</h3>
-        <p>Operações customizadas com cobertura regional e nacional.</p>
-      </div>
-    </div>
-  </section>
-  <section id="contato">
-    <h2 class="section-title">Entre em Contato</h2>
-    <form name="contato" method="POST" data-netlify="true">
-      <input type="hidden" name="form-name" value="contato">
-      <input type="text" name="nome" placeholder="Seu nome" required>
-      <input type="email" name="email" placeholder="Seu e-mail" required>
-      <input type="tel" name="telefone" placeholder="Seu telefone">
-      <textarea name="mensagem" rows="4" placeholder="Escreva sua mensagem..." required></textarea>
-      <button type="submit" class="cta">Enviar Mensagem</button>
-    </form>
-  </section>
-  <footer>
-    <p>&copy; 2025 NEWSEA LOG. Todos os direitos reservados.</p>
-  </footer>
-</body>
-</html>
