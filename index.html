@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <meta name="description" content="Logística inteligente e personalizada com a NEWSEA LOG. Soluções em transporte, armazenagem e distribuição com agilidade e eficiência.">
+  <title>NEWSEA LOG - Logística Inteligente</title>
+  <link rel="canonical" href="self.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap">
+  <style>
+    :root {
+      --primary: #0A1F44;
+      --accent: #A3C644;
+      --text: #333333;
+      --bg: #ffffff;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background-color: var(--bg);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #eee;
+      flex-wrap: wrap;
+    }
+    header img {
+      height: 50px;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    nav a {
+      margin: 0.5rem;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+    .hero h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .cta {
+      background-color: var(--accent);
+      color: var(--primary);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 0.5rem;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    .services, .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      font-family: 'Open Sans', sans-serif;
+    }
+    footer {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        width: 100%;
+        justify-content: center;
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo-newsea.svg" alt="Logotipo da NEWSEA LOG">
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>Transporte logístico inteligente para impulsionar sua empresa</h1>
+    <button class="cta">Fale com um especialista</button>
+  </section>
+  <section id="sobre">
+    <h2>Sobre a NEWSEA LOG</h2>
+    <p>Especializada em soluções logísticas integradas, oferecemos serviços de transporte, armazenagem e distribuição com foco em eficiência e tecnologia.</p>
+  </section>
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <div class="services">
+      <div>
+        <h3>Transporte Rodoviário</h3>
+        <p>Segurança e pontualidade em cada entrega.</p>
+      </div>
+      <div>
+        <h3>Armazenagem</h3>
+        <p>Espaços modernos e monitorados 24h para seu estoque.</p>
+      </div>
+      <div>
+        <h3>Distribuição</h3>
+        <p>Logística sob medida para o seu tipo de produto.</p>
+      </div>
+    </div>
+  </section>
+  <section id="depoimentos">
+    <h2>Depoimentos</h2>
+    <div class="testimonials">
+      <blockquote>"Excelente atendimento e agilidade!" ⭐⭐⭐⭐⭐</blockquote>
+      <blockquote>"Nossa logística nunca foi tão eficiente." ⭐⭐⭐⭐⭐</blockquote>
+    </div>
+  </section>
+  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <form name="contato" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contato">
+      <p><input type="text" name="nome" placeholder="Seu nome" required></p>
+      <p><input type="email" name="email" placeholder="Seu e-mail" required></p>
+      <p><input type="tel" name="telefone" placeholder="Seu telefone"></p>
+      <p><textarea name="mensagem" rows="4" placeholder="Sua mensagem" required></textarea></p>
+      <p><button type="submit" class="cta">Enviar mensagem</button></p>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2025 NEWSEA LOG. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
