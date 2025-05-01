@@ -1,199 +1,231 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!doctype html>
+<!-- Landing page redesenhada com base na estrutura da RF Mídias -->
+<html lang="pt-BR">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.2">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Soluções logísticas da NEWSEA LOG: transporte, armazenagem e distribuição com agilidade e inteligência.">
+  <title>NEWSEA LOG - Soluções Logísticas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap">
+  <style>
+    :root {
+      --primary: #0A1F44;
+      --accent: #A3C644;
+      --text: #2c2c2c;
+      --light: #f9f9f9;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: var(--text);
+      background: var(--light);
+    }
+    header {
+      background: var(--primary);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    header img {
+      height: 48px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('LOGO-NEWSEA-WHITE.png') center/contain no-repeat var(--primary);
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+    .hero h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+    }
+    .hero p {
+      margin: 1rem auto;
+      max-width: 600px;
+    }
+    .cta {
+      background: var(--accent);
+      color: var(--primary);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      margin-top: 1.5rem;
+      cursor: pointer;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section-title {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--primary);
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .feature {
+      background: white;
+      border-radius: 0.75rem;
+      padding: 2rem;
+      flex: 1 1 300px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .feature img {
+      height: 64px;
+      margin-bottom: 1rem;
+    }
+    .bullets {
+      max-width: 900px;
+      margin: 2rem auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    .bullets li {
+      list-style: none;
+      background: white;
+      padding: 1rem 1.5rem;
+      border-left: 4px solid var(--accent);
+      border-radius: 0.5rem;
+      box-shadow: 0 0 8px rgba(0,0,0,0.03);
+    }
+    .logos-parceiros {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .logos-parceiros img {
+      max-height: 48px;
+      max-width: 120px;
+      object-fit: contain;
+      filter: grayscale(100%);
+    }
+    form {
+      display: grid;
+      gap: 1rem;
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      font-family: inherit;
+      width: 100%;
+    }
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+    }
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .bullets {
+        grid-template-columns: 1fr;
+      }
+      .logos-parceiros {
+        gap: 1rem;
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
 <body>
-<p class="p1">&lt;!doctype html&gt;</p>
-<p class="p1">&lt;!-- Esse arquivo HTML pode ser exportado diretamente para um arquivo físico com Python para deploy no GitHub ou Netlify --&gt;</p>
-<p class="p1">&lt;html lang="pt-BR"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="utf-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="description" content="Logística inteligente e personalizada com a NEWSEA LOG. Soluções em transporte, armazenagem e distribuição com agilidade e eficiência."&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;NEWSEA LOG - Logística Inteligente&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="canonical" href="self.html"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&amp;family=Open+Sans&amp;display=swap"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>:root {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--primary: #0A1F44;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--accent: #A3C644;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--text: #333333;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--bg: #ffffff;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>* {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-sizing: border-box;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Open Sans', sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: var(--bg);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.6;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>header {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: var(--bg);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>justify-content: space-between;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 1rem 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 1px solid #eee;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>flex-wrap: wrap;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>header img {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>height: 50px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>nav {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>flex-wrap: wrap;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>nav a {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: var(--primary);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: url('LOGO-NEWSEA-WHITE.png') center/contain no-repeat var(--primary);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 6rem 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero h1 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Montserrat', sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 2.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.cta {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: var(--primary);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 0.75rem 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 0.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>section {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 4rem 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width: 1200px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: auto;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>h2 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Montserrat', sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: var(--primary);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.services, .testimonials {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));</p>
-<p class="p1"><span class="Apple-converted-space">      </span>gap: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.services div {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.services img {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width: 80px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>form input, form textarea {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 0.75rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid #ccc;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 0.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Open Sans', sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>footer {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: var(--primary);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 2rem 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width: 768px) {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>.hero h1 {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>font-size: 1.8rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>}</p>
-<p class="p1"><span class="Apple-converted-space">      </span>header {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>flex-direction: column;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>align-items: flex-start;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>}</p>
-<p class="p1"><span class="Apple-converted-space">      </span>nav {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>margin-top: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;img src="LOGO-NEWSEA-PRINCIPAL.png" alt="Logotipo da NEWSEA LOG"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;nav&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#sobre"&gt;Sobre&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#servicos"&gt;Serviços&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#depoimentos"&gt;Depoimentos&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#contato"&gt;Contato&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="hero"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Transporte logístico inteligente para impulsionar sua empresa&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;button class="cta"&gt;Fale com um especialista&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="sobre"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Sobre a NEWSEA LOG&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;img src="ICONE-NEWSEA-1.png" alt="Ícone institucional NEWSEA" style="max-width:100px;margin:1rem 0;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Especializada em soluções logísticas integradas, oferecemos serviços de transporte, armazenagem e distribuição com foco em eficiência e tecnologia.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="servicos"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Serviços&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="services"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="ICONE-NEWSEA-1.png" alt="Ícone Transporte Rodoviário"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Transporte Rodoviário&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Segurança e pontualidade em cada entrega.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="ICONE-NEWSEA-2.png" alt="Ícone Armazenagem"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Armazenagem&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Espaços modernos e monitorados 24h para seu estoque.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="ICONE-NEWSEA-3.png" alt="Ícone Distribuição"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Distribuição&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Logística sob medida para o seu tipo de produto.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="depoimentos"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Depoimentos&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="testimonials"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;blockquote&gt;"Excelente atendimento e agilidade!" ⭐⭐⭐⭐⭐&lt;/blockquote&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;blockquote&gt;"Nossa logística nunca foi tão eficiente." ⭐⭐⭐⭐⭐&lt;/blockquote&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="contato"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Fale Conosco&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;form name="contato" method="POST" data-netlify="true"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;input type="hidden" name="form-name" value="contato"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;&lt;input type="text" name="nome" placeholder="Seu nome" required&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;&lt;input type="email" name="email" placeholder="Seu e-mail" required&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;&lt;input type="tel" name="telefone" placeholder="Seu telefone"&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;&lt;textarea name="mensagem" rows="4" placeholder="Sua mensagem" required&gt;&lt;/textarea&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;&lt;button type="submit" class="cta"&gt;Enviar mensagem&lt;/button&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/form&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;&amp;copy; 2025 NEWSEA LOG. Todos os direitos reservados.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+  <header>
+    <img src="LOGO-NEWSEA-PRINCIPAL.png" alt="Logo NEWSEA LOG">
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>Logística que move seu negócio</h1>
+    <p>Transporte, armazenagem e distribuição com inteligência e segurança.</p>
+    <button class="cta">Fale com um especialista</button>
+  </section>
+  <section id="sobre">
+    <h2 class="section-title">Quem Somos</h2>
+    <p style="max-width:800px;margin:auto;text-align:center;">A NEWSEA LOG é especializada em soluções logísticas integradas para empresas que precisam de eficiência, controle e agilidade. Com estrutura moderna e equipe experiente, garantimos entregas no prazo com rastreamento e atendimento consultivo.</p>
+  </section>
+  <section>
+    <h2 class="section-title">Por que escolher a NEWSEA LOG</h2>
+    <ul class="bullets">
+      <li>+98% de entregas no prazo em 2024</li>
+      <li>Monitoramento logístico em tempo real</li>
+      <li>Atendimento humano e personalizado</li>
+      <li>Equipe com mais de 15 anos de experiência</li>
+    </ul>
+  </section>
+  <section>
+    <h2 class="section-title">Quem confia na NEWSEA LOG</h2>
+    <div class="logos-parceiros">
+      <img src="cliente1.png" alt="Logo Cliente 1">
+      <img src="cliente2.png" alt="Logo Cliente 2">
+      <img src="cliente3.png" alt="Logo Cliente 3">
+      <img src="certificacao1.png" alt="Certificação 1">
+    </div>
+  </section>
+  <section id="servicos">
+    <h2 class="section-title">Nossos Serviços</h2>
+    <div class="features">
+      <div class="feature">
+        <img src="ICONE-NEWSEA-1.png" alt="Transporte">
+        <h3>Transporte Rodoviário</h3>
+        <p>Cargas fracionadas ou dedicadas com total controle logístico.</p>
+      </div>
+      <div class="feature">
+        <img src="ICONE-NEWSEA-2.png" alt="Armazenagem">
+        <h3>Armazenagem Inteligente</h3>
+        <p>Infraestrutura segura e sistemas para controle de estoque.</p>
+      </div>
+      <div class="feature">
+        <img src="ICONE-NEWSEA-3.png" alt="Distribuição">
+        <h3>Distribuição e Entregas</h3>
+        <p>Operações customizadas com cobertura regional e nacional.</p>
+      </div>
+    </div>
+  </section>
+  <section id="contato">
+    <h2 class="section-title">Entre em Contato</h2>
+    <form name="contato" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contato">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <input type="tel" name="telefone" placeholder="Seu telefone">
+      <textarea name="mensagem" rows="4" placeholder="Escreva sua mensagem..." required></textarea>
+      <button type="submit" class="cta">Enviar Mensagem</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2025 NEWSEA LOG. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
