@@ -176,5 +176,64 @@
         flex-direction: column;
       }
     }
-  </style>
+    .cta:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
+  h1, h2.section-title {
+    transition: all 0.5s ease-in-out;
+  }
+  .show h1, .show h2.section-title {
+    transform: translateY(0);
+    opacity: 1;
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => {
+      section.classList.add('hidden');
+      observer.observe(section);
+    });
+  });
+</script>
+<style>
+  .hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  .show {
+    opacity: 1;
+    transform: none;
+  }
+</style>
 </head>
+<body>
+  <header>
+    <img src="file-6ZxXJ4B6NjMxZ2t6ZVty5f" alt="Logotipo NEWSEA LOG">
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>Logística que move seu negócio</h1>
+    <p>Transporte, armazenagem e distribuição com inteligência e segurança.</p>
+    <button class="cta">Fale com um especialista</button>
+  </section>
+  <section id="missao" style="background: url('file-8AanUKePxtJJeQ4Pvc9hTS') center/cover no-repeat; background-blend-mode: multiply; background-color: rgba(10, 31, 68, 0.7); color: white; text-align: center;">
+    <h2 class="section-title">Nossa Missão</h2>
+    <p style="max-width: 800px; margin: auto;">Garantir excelência logística com tecnologia, pontualidade e comprometimento em todas as etapas da cadeia de suprimentos.</p>
+  </section>
+</body>
+</html>
