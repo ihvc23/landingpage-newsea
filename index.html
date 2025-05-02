@@ -22,7 +22,6 @@
     }
     header {
       background: var(--primary);
-      color: white;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -38,7 +37,7 @@
       font-weight: bold;
     }
     .hero {
-      background: url('file-XXKZ9EN6oNm92hLjcZngme') center/cover no-repeat;
+      background: url('hero-bg.png') center/cover no-repeat;
       color: white;
       text-align: center;
       padding: 6rem 2rem;
@@ -46,7 +45,6 @@
     .hero h1 {
       font-family: 'Montserrat', sans-serif;
       font-size: 2.5rem;
-      transition: all 0.5s ease-in-out;
     }
     .hero p {
       margin: 1rem auto;
@@ -72,29 +70,44 @@
       margin: auto;
       transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     }
-    section.hidden {
+    .hidden {
       opacity: 0;
       transform: translateY(40px);
     }
-    section.show {
+    .show {
       opacity: 1;
       transform: none;
     }
     #sobre {
-      background: url('file-TmCWQwQaqwzNzQ9ZNqy7eR') center/cover no-repeat;
+      background: url('sobre-bg.png') center/cover no-repeat;
       background-blend-mode: multiply;
       background-color: rgba(10, 31, 68, 0.6);
       color: white;
     }
     #servicos {
-      background: url('file-PvLDWmnjY5LXGQxvRqGg69') center/cover no-repeat;
+      background: url('servicos-bg.png') center/cover no-repeat;
       background-blend-mode: overlay;
       background-color: rgba(255, 255, 255, 0.95);
     }
+    #missao {
+      background: url('missao-bg.png') center/cover no-repeat;
+      background-blend-mode: multiply;
+      background-color: rgba(10, 31, 68, 0.7);
+      color: white;
+      text-align: center;
+    }
     #contato {
-      background: url('file-e98e36a5-d661-45ff-b46f-f2ed8cba4fe5') center/cover no-repeat;
+      background: url('contato-bg.png') center/cover no-repeat;
       background-blend-mode: lighten;
       background-color: rgba(255,255,255,0.85);
+    }
+    footer {
+      background: url('footer-bg.png') center/cover no-repeat, var(--primary);
+      background-blend-mode: multiply;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
     }
     .section-title {
       font-family: 'Montserrat', sans-serif;
@@ -102,10 +115,11 @@
       font-size: 2rem;
       margin-bottom: 2rem;
       text-align: center;
-      transition: all 0.5s ease-in-out;
     }
     #sobre .section-title,
-    #sobre p {
+    #sobre p,
+    #missao .section-title,
+    #missao p {
       color: #fff;
     }
     .features {
@@ -141,20 +155,6 @@
       border-radius: 0.5rem;
       box-shadow: 0 0 8px rgba(0,0,0,0.03);
     }
-    .logos-parceiros {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .logos-parceiros img {
-      max-height: 48px;
-      max-width: 120px;
-      object-fit: contain;
-      filter: grayscale(100%);
-    }
     form {
       display: grid;
       gap: 1rem;
@@ -170,24 +170,12 @@
       font-family: inherit;
       width: 100%;
     }
-    footer {
-      background: url('file-RL8j9uCdX4sn9pykNtSkG2') center/cover no-repeat, var(--primary);
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-      margin-top: 4rem;
-      background-blend-mode: multiply;
-    }
     @media (max-width: 768px) {
       .hero h1 {
         font-size: 2rem;
       }
       .bullets {
         grid-template-columns: 1fr;
-      }
-      .logos-parceiros {
-        gap: 1rem;
-        flex-direction: column;
       }
     }
   </style>
@@ -206,10 +194,57 @@
     <p>Transporte, armazenagem e distribuição com inteligência e segurança.</p>
     <button class="cta">Fale com um especialista</button>
   </section>
-  <section id="missao" style="background: url('file-8AanUKePxtJJeQ4Pvc9hTS') center/cover no-repeat; background-blend-mode: multiply; background-color: rgba(10, 31, 68, 0.7); color: white; text-align: center;">
-    <h2 class="section-title">Nossa Missão</h2>
-    <p style="max-width: 800px; margin: auto;">Garantir excelência logística com tecnologia, pontualidade e comprometimento em todas as etapas da cadeia de suprimentos.</p>
+  <section id="sobre">
+    <h2 class="section-title">Quem Somos</h2>
+    <p style="max-width:800px;margin:auto;text-align:center;">A NEWSEA LOG é especializada em soluções logísticas integradas para empresas que precisam de eficiência, controle e agilidade.</p>
   </section>
+  <section id="missao">
+    <h2 class="section-title">Nossa Missão</h2>
+    <p style="max-width:800px;margin:auto;">Garantir excelência logística com tecnologia, pontualidade e comprometimento em todas as etapas da cadeia de suprimentos.</p>
+  </section>
+  <section>
+    <h2 class="section-title">Por que escolher a NEWSEA LOG</h2>
+    <ul class="bullets">
+      <li>+98% de entregas no prazo em 2024</li>
+      <li>Monitoramento logístico em tempo real</li>
+      <li>Atendimento humano e personalizado</li>
+      <li>Equipe com mais de 15 anos de experiência</li>
+    </ul>
+  </section>
+  <section id="servicos">
+    <h2 class="section-title">Nossos Serviços</h2>
+    <div class="features">
+      <div class="feature">
+        <img src="icone1.png" alt="Transporte">
+        <h3>Transporte Rodoviário</h3>
+        <p>Cargas fracionadas ou dedicadas com total controle logístico.</p>
+      </div>
+      <div class="feature">
+        <img src="icone2.png" alt="Armazenagem">
+        <h3>Armazenagem Inteligente</h3>
+        <p>Infraestrutura segura e sistemas para controle de estoque.</p>
+      </div>
+      <div class="feature">
+        <img src="icone3.png" alt="Distribuição">
+        <h3>Distribuição e Entregas</h3>
+        <p>Operações customizadas com cobertura regional e nacional.</p>
+      </div>
+    </div>
+  </section>
+  <section id="contato">
+    <h2 class="section-title">Entre em Contato</h2>
+    <form name="contato" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contato">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <input type="tel" name="telefone" placeholder="Seu telefone">
+      <textarea name="mensagem" rows="4" placeholder="Escreva sua mensagem..." required></textarea>
+      <button type="submit" class="cta">Enviar Mensagem</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2025 NEWSEA LOG. Todos os direitos reservados.</p>
+  </footer>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const sections = document.querySelectorAll('section');
