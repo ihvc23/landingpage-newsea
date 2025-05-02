@@ -1,35 +1,6 @@
 <!doctype html>
-<!-- Landing page redesenhada com base na estrutura da RF Mídias -->
 <html lang="pt-BR">
 <head>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const sections = document.querySelectorAll('section');
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-          }
-        });
-      }, { threshold: 0.1 });
-
-      sections.forEach(section => {
-        section.classList.add('hidden');
-        observer.observe(section);
-      });
-    });
-  </script>
-  <style>
-    .hidden {
-      opacity: 0;
-      transform: translateY(40px);
-      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    }
-    .show {
-      opacity: 1;
-      transform: none;
-    }
-  </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Soluções logísticas da NEWSEA LOG: transporte, armazenagem e distribuição com agilidade e inteligência.">
@@ -75,6 +46,7 @@
     .hero h1 {
       font-family: 'Montserrat', sans-serif;
       font-size: 2.5rem;
+      transition: all 0.5s ease-in-out;
     }
     .hero p {
       margin: 1rem auto;
@@ -89,11 +61,24 @@
       font-size: 1rem;
       margin-top: 1.5rem;
       cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+    .cta:hover {
+      transform: scale(1.05);
     }
     section {
       padding: 4rem 2rem;
       max-width: 1200px;
       margin: auto;
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    section.hidden {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    section.show {
+      opacity: 1;
+      transform: none;
     }
     #sobre {
       background: url('file-TmCWQwQaqwzNzQ9ZNqy7eR') center/cover no-repeat;
@@ -117,6 +102,7 @@
       font-size: 2rem;
       margin-bottom: 2rem;
       text-align: center;
+      transition: all 0.5s ease-in-out;
     }
     #sobre .section-title,
     #sobre p {
@@ -185,13 +171,13 @@
       width: 100%;
     }
     footer {
-  background: url('file-RL8j9uCdX4sn9pykNtSkG2') center/cover no-repeat, var(--primary);
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
-  margin-top: 4rem;
-  background-blend-mode: multiply;
-}
+      background: url('file-RL8j9uCdX4sn9pykNtSkG2') center/cover no-repeat, var(--primary);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+      background-blend-mode: multiply;
+    }
     @media (max-width: 768px) {
       .hero h1 {
         font-size: 2rem;
@@ -204,20 +190,7 @@
         flex-direction: column;
       }
     }
-    .cta:hover {
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
-  }
-  h1, h2.section-title {
-    transition: all 0.5s ease-in-out;
-  }
-  .show h1, .show h2.section-title {
-    transform: translateY(0);
-    opacity: 1;
-  }
-</style>
-
-
+  </style>
 </head>
 <body>
   <header>
@@ -237,3 +210,22 @@
     <h2 class="section-title">Nossa Missão</h2>
     <p style="max-width: 800px; margin: auto;">Garantir excelência logística com tecnologia, pontualidade e comprometimento em todas as etapas da cadeia de suprimentos.</p>
   </section>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const sections = document.querySelectorAll('section');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      sections.forEach(section => {
+        section.classList.add('hidden');
+        observer.observe(section);
+      });
+    });
+  </script>
+</body>
+</html>
