@@ -2,6 +2,34 @@
 <!-- Landing page redesenhada com base na estrutura da RF Mídias -->
 <html lang="pt-BR">
 <head>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const sections = document.querySelectorAll('section');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      sections.forEach(section => {
+        section.classList.add('hidden');
+        observer.observe(section);
+      });
+    });
+  </script>
+  <style>
+    .hidden {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .show {
+      opacity: 1;
+      transform: none;
+    }
+  </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Soluções logísticas da NEWSEA LOG: transporte, armazenagem e distribuição com agilidade e inteligência.">
@@ -188,38 +216,12 @@
     opacity: 1;
   }
 </style>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const sections = document.querySelectorAll('section');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-        }
-      });
-    }, { threshold: 0.1 });
 
-    sections.forEach(section => {
-      section.classList.add('hidden');
-      observer.observe(section);
-    });
-  });
-</script>
-<style>
-  .hidden {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
-  .show {
-    opacity: 1;
-    transform: none;
-  }
-</style>
+
 </head>
 <body>
   <header>
-    <img src="file-6ZxXJ4B6NjMxZ2t6ZVty5f" alt="Logotipo NEWSEA LOG">
+    <img src="logo-newsea.png" alt="Logotipo NEWSEA LOG">
     <nav>
       <a href="#sobre">Sobre</a>
       <a href="#servicos">Serviços</a>
@@ -235,5 +237,3 @@
     <h2 class="section-title">Nossa Missão</h2>
     <p style="max-width: 800px; margin: auto;">Garantir excelência logística com tecnologia, pontualidade e comprometimento em todas as etapas da cadeia de suprimentos.</p>
   </section>
-</body>
-</html>
